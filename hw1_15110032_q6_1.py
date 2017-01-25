@@ -32,7 +32,7 @@ def twochoice(k, n, b):
 	return max(d.values())
 
 # plot Y v/s X
-X = range(10**4, 10**5+1, 10**3)[1:5]
+X = range(10**4, 10**5+1, 10**3)
 Y1 = []	
 Y2 = []
 for n in X:	
