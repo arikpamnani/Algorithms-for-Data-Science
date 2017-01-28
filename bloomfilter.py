@@ -1,21 +1,13 @@
-#-----------------------------------------------#
-#												#
-#				  Arik Pamnani					#
-#												#
-#-----------------------------------------------#
-
 import math
 def hash(a, x, p):
 	return (a*x) % p
 
 class BloomFilter:
-	
 	def __init__(self, n, m):
 		self.BF = [False] * m	# bit-array
 		self.n = n
 		self.m = m
 		self.k = int(math.ceil(0.685 * float(m) / float(n)))
-		# generate p
 			
 	def insert(self, x):		
 		for i in range(1, self.k + 1):
